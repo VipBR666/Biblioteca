@@ -5,6 +5,10 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('', ConsultaView.as_view(), name='livros'),
+    #path('reserva/', ReservaView.as_view(), name='reserva'),
+    path('livros/delete/<int:id>/', DeleteLivroView.as_view(), name='delete'),
+    path('admin/', admin.site.urls),
     path('', IndexView.as_view(), name='index'),
     path('livros/', LivrosView.as_view(), name='livros'),
     #path('reserva/', EmprestimoView.as_view(),name='reserva'),
