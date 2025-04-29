@@ -17,6 +17,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 #o template usado
 MIDDLEWARE = [
@@ -30,6 +32,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {'BACKEND':'django.template.backends.django.DjangoTemplates',

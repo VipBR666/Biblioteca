@@ -17,5 +17,6 @@ urlpatterns = [
     path('editor/', EditorasView.as_view(),name='editora'),
     path('leitor/', LeitoresView.as_view(),name='leitor'),
     path('genero/', GenerosView.as_view(),name='genero'),
+    path('editar/<int:id>/', EditarLivroView.as_view(), name='editar'),
 ]
 
